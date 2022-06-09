@@ -22,3 +22,5 @@ C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\DojoSurvey\obj
 C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\DojoSurvey\obj\Debug\net6.0\DojoSurvey.pdb
 C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\DojoSurvey\obj\Debug\net6.0\DojoSurvey.genruntimeconfig.cache
 C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\DojoSurvey\obj\Debug\net6.0\ref\DojoSurvey.dll
+C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\DojoSurvey\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\tanne\OneDrive\Desktop\CodingDojoFolder\BootcampClass\C#\DojoSurvey\obj\Debug\net6.0\scopedcss\projectbundle\DojoSurvey.bundle.scp.css

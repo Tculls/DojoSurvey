@@ -1,39 +1,33 @@
-<link rel = "stylesheet" href="~/css/style.css"> 
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Survey;
 
-<div>
-    <form action="method" method="post">
-        <div>
-        <label for="name">Your Name:</label>
-        <input type = "text" name="name" id = "name">
-        </div>
+<form action="/survey" method="post">
+    <div>
+        <label for="Name">Your Name</label>
+        <input asp-for="Name">
+        <span asp-validation-for="Name"></span>
+    </div>
 
-        <div>
-            <label for ="location">Dojo Location:</label>
-            <select name = "location" id = "location">
-                <option value="">Choose Location</option>
-                <option value = "Bellevue">Bellevue</option>
-                <option value="online">Online</option>
-                <option value="san jose">San Jose</option>
-                <option value= " Dallas">Dallas</option>
-            </select>
-        </div>
-        
-        <div>
-            <label for ="language">Favorite Language</label>
-            <select name = "language" id = "language">
-                <option value="">Choose Language</option>
-                <option value = "C#">C#</option>
-                <option value="Java">Java</option>
-                <option value="Python">Python</option>
-                <option value= "Javascript">Javascript</option>
-            </select>
-        </div>
+    <div>
+        <label for="Language">Favorite Language</label>
+        <input asp-for="Language">
+        <span asp-validation-for="Language"></span>
+    </div>
 
-        <div>
-            <label for ="comment"> Comment: (optional)</label>
-            <textarea id="comment" name = "comment"></textarea>
-        </div>
-        <button type="submit">Submit</button>
+    <div>
+        <label for="Location">Location</label>
+        <input asp-for="Location">
+        <span asp-validation-for="Location"></span>
+    </div>
 
-    </form>
-</div>
+    <div>
+        <label for="Comments">Comments (Optional)</label>
+        <input name="Comments">
+
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
