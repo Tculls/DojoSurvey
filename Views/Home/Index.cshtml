@@ -1,33 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-@model Survey;
+﻿
+@model DojoSurvey.Models.Submit
 
-<form action="/survey" method="post">
+<form action="Results" method="post">
     <div>
-        <label for="Name">Your Name</label>
+        <label asp-for="Name"></label>
         <input asp-for="Name">
         <span asp-validation-for="Name"></span>
     </div>
 
     <div>
-        <label for="Language">Favorite Language</label>
-        <input asp-for="Language">
+        <label asp-for="Language"></label>
+        <select asp-for="Language">
+            <option value="JAVA">JAVA</option>
+        </select>
         <span asp-validation-for="Language"></span>
     </div>
 
     <div>
-        <label for="Location">Location</label>
-        <input asp-for="Location">
+        <label asp-for="Location"></label>
+        <select asp-for="Location">
+            <option value="Burbank">Burbank</option>
+        </select>
         <span asp-validation-for="Location"></span>
     </div>
 
     <div>
-        <label for="Comments">Comments (Optional)</label>
-        <input name="Comments">
+        <label asp-for="Comment"></label>
+        <input asp-for="Comment">
+        <span asp-validation-for="Comment"></span>
 
     </div>
     <div>
-        <input type="submit" value="Submit">
+        <button type="submit" value="submit">Submit</button>
     </div>
 </form>
